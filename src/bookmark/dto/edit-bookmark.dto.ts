@@ -7,7 +7,7 @@ export class EditBookmarkDTO {
 
   @IsString()
   @IsOptional()
-  descriptiom?: string;
+  description?: string;
 
   @IsString()
   @IsOptional()
