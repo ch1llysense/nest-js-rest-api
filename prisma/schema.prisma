@@ -40,3 +40,14 @@ model Bookmark {
 
   @@map("bookmarks")
 }
+
+model Car {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  brand String
+  model String
+
+  @@map("cars")
+}
